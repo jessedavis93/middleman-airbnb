@@ -1,8 +1,9 @@
 ---
 title: Le Wagon - Middleman
 ---
+<%= partial "layouts/banner" %>
 
-<div id="home">
+<!-- <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
     <p>
@@ -12,4 +13,15 @@ title: Le Wagon - Middleman
       <%= link_to "More about this template", "about.html" %>
     </p>
   </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <% 6.times do %>
+      <div class="col-md-4">
+        <%= partial "layouts/cards" %>
+      </div>
+    <% end %>
+  </div>
 </div>
+
