@@ -1,0 +1,68 @@
+
+.header-flat {
+  background: $orange;
+
+  .container {
+    height: 40vh;
+  }
+}
+
+
+.header-flat-details {
+  display: flex;
+  margin-top: 40px;
+  background: white;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.6);
+
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+  }
+}
+
+.header-flat img {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.header-flat-desc {
+
+}
+
+.header-flat form {
+  background: white;
+  padding: 15px;
+  margin-top: 15px;
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.6);
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    margin-bottom: 15px;
+  }
+}
+
+
+.flat-description {
+
+  .container {
+    height: 400px;
+  }
+}
+
+

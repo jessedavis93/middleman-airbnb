@@ -1,0 +1,74 @@
+
+
+<!-- Inject flat data in template -->
+<% flat = data.flats[owner] %>
+
+<%= partial "layouts/show-banner", locals: {city: flat.city_slug} %>
+
+
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+
+        <div class="header-flat-details">
+
+          <div class="header-flat-owner"><%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+          </div>
+
+          <div class="header-flat-desc">
+            <h1><%= flat.description %></h1>
+            <p><%= flat.city_name %></p>
+
+            <div class="header-rating">
+              <% flat.rating.times do %>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <form action="">
+          <h4>Book Dis Shit</h4>
+          <div class="form-group">
+            <div class="row">
+
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="checkin" id="checkin">
+              </div>
+
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="checkout">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <select name="" id="guests" class="form-control">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+              </select>
+            </div>
+
+            <input type="submit" class="btn btn-danger" value="Book it" style="width: 100%">
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flat-description">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h2>About this place</h2>
+        <h4><%= flat.description %></h4>
+      </div>
+    </div>
+  </div>
+</div>
+
